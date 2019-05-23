@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0;
   padding: 0;
   text-align: center;
@@ -18,9 +18,11 @@ body{
   line-height: 15px;
 }
 .contact-title h2{
-  font-size: 15px;
+  font-size: 18px;
 }
-
+.contact-title h3 {
+  font-size: 14px; 
+}
 form
 {
   margin-top:50px;

@@ -8,6 +8,7 @@ body {
 }
 .contact-title
 {
+  width: 400px;
   margin-top: 40px;
   color: darkred;
   text-transform:  uppercase;
@@ -29,7 +30,7 @@ form
 }
 .form-control
 {
-  width: 500px;
+  width: 600px;
   background: transparent;
   border:none;
   outline: none;

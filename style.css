@@ -9,19 +9,19 @@ body {
 .contact-title
 {
   margin-top: 40px;
-  color: darkred;
+  color: white;
   text-transform:  uppercase;
   transition: all 4s ease-in-out;
 }
-.contact-title h1 {
+h1 {
   font-size: 25px;
-  line-height: 15px;
+  line-height: 30px;
 }
-.contact-title h2{
-  font-size: 15px;
+h2 {
+  font-size: 16px;
 }
-.contact-title h3 {
-  font-size: 10px;
+h3 {
+  font-size: 13px;
 }
 form
 {
@@ -35,7 +35,7 @@ form
   border:none;
   outline: none;
   border-bottom:  1px solid grey;
-  color: #fff;
+  color: purple;
   font-size: 18px;
   margin-bottom: 16px;
 }
@@ -63,5 +63,8 @@ input
 .darkred
 {
   color:darkred;
-
+}
+.gold
+{
+  color:gold;
 }

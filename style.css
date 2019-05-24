@@ -9,7 +9,7 @@ body {
 .contact-title
 {
   margin-top: 40px;
-  color: darkred;
+  color: red;
   text-transform:  uppercase;
   transition: all 4s ease-in-out;
 }
@@ -60,9 +60,9 @@ input
   background-color: darkred;
   cursor: pointer;
 }
-.darkred
+.red
 {
-  color:darkred;
+  color:red;
 }
 .gold
 {

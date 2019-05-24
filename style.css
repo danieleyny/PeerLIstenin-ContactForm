@@ -9,7 +9,7 @@ body {
 .contact-title
 {
   margin-top: 40px;
-  color: white;
+  color: darkred;
   text-transform:  uppercase;
   transition: all 4s ease-in-out;
 }
@@ -21,7 +21,7 @@ h2 {
   font-size: 16px;
 }
 h3 {
-  font-size: 13px;
+  font-size: 15px;
 }
 form
 {
@@ -35,7 +35,7 @@ form
   border:none;
   outline: none;
   border-bottom:  1px solid grey;
-  color: purple;
+  color: white;
   font-size: 18px;
   margin-bottom: 16px;
 }

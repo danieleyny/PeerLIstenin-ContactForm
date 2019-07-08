@@ -14,6 +14,93 @@ function myFunction1() {
   popup1.classList.toggle("show1");
 }
 </script>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- ;
+// numberguess is by Lancer - written 4 Jan 1999
+// lancer@kp.planet.gen.nz
+
+var guessme=Math.round(Math.random()*(99)+1);
+var speech='Guess my number (from 1 to 100)';
+
+function process(mystery) {
+var guess=document.forms.guessquiz.guess.value;
+var speech='"'+guess+ '" does not make sense to me.';
+document.forms.guessquiz.guess.value='';
+
+if (guess==mystery)
+{
+document.forms.guessquiz.prompt.value='Congratulations! '+mystery+' is correct!';
+alert ('Well done - the mystery number is '+mystery+'! \n\nPress this button to reload the page for another game.');
+speech='';
+document.location=document.location;
+}
+
+if (mystery<guess)
+{
+speech='Less than '+ guess;
+}
+
+if (mystery>guess)
+{
+speech='Greater than '+ guess;
+}
+
+if (guess=='')
+{
+speech='You didn\'t guess anything!'
+}
+
+document.forms.guessquiz.prompt.value=speech; document.forms.guessquiz.guess.focus();
+
+}
+
+// end hide -->
+</SCRIPT>
+<SCRIPT LANGUAGE="JAVASCRIPT">
+
+function lifetimer(){
+
+        today = new Date()
+
+        BirthDay = new Date(document.live.age.value)
+
+        timeold = (today.getTime() - BirthDay.getTime());
+
+        sectimeold = timeold / 1000;
+
+        secondsold = Math.floor(sectimeold);
+
+        msPerDay = 24 * 60 * 60 * 1000 ;
+
+        timeold = (today.getTime() - BirthDay.getTime());
+
+        e_daysold = timeold / msPerDay;
+
+        daysold = Math.floor(e_daysold);
+
+        e_hrsold = (e_daysold - daysold)*24;
+
+        hrsold = Math.floor(e_hrsold);
+
+        minsold = Math.floor((e_hrsold - hrsold)*60);
+
+        document.live.time1.value = daysold
+
+        document.live.time2.value = hrsold
+
+        document.live.time3.value = minsold
+
+        window.status = "Well at the moment you are " + secondsold + "............ seconds old.";
+
+        timerID = setTimeout("lifetimer()",1000)
+
+}
+// -- done hiding from old browsers -->
+
+</script>
+
+
+
 <body class="grad1">
   <h6 class="titlebox">  Peer Listening </h6>
   <h5 class="titledisc"> Bard | High School </h5>
@@ -22,13 +109,17 @@ function myFunction1() {
         <h2> Fill out the questions below and we will get back to you as soon as possible with more information.</h2>
   </div>
   <br />
-  <div class="popup" onclick="myFunction()">Click me for more information!
-    <span class="popuptext" id="myPopup">As a Peer Listener your role is to </span>
+  <div>
+    <a class="linkedtext" href="#infopeer"> Click me for more information regarding what it takes to be a peer listener!</a>
+
+    <a class="linkedtext1" href="#becomepeer"> Click me for more information regarding the role of a peer listener!</a>
+
+<br /><br />
+
+    <a class="linkedtext2" href="#games"> Click me to play some games</a>
   </div>
 
-  <div class="popup1" onclick="myFunction1()">Click me for more information!
-    <span class="popuptext1" id="myPopup1">As a Peer Listener your role is </span>
-  </div>
+
 
 
   <div class="contact-form">
@@ -65,10 +156,103 @@ function myFunction1() {
   </div>
   <br />
   <a class="gold" href="https://danieleyny.github.io/PeerLIstening/"> Click this to Return Back To The Main Page<a/>
+<br /><br /><br />
+<a name="games"><hr class="hrgame"/></a>
+<br />
+<p> Here Are Some Games In Case You Want To Relax (Forms Suck!)</p>
+<div class="game1">
+    <FORM onSubmit="" NAME="guessquiz">
+      <CENTER>
+        <TABLE BGCOLOR="darkblue" height="300" width="350" BORDER="3" CELLPADDING="5">
+          <TR>
+            <TD BGCOLOR="darkblue">
+              <FONT class="gametext" ><B>GUESS MY NUMBER (1 to 100)</B></FONT>
+            </TD>
+          </TR>
+          <TR>
+            <TD>
+              <CENTER>
+                <INPUT TYPE="text" NAME="prompt" class="gametext1" VALUE="Guess A Number Below"><BR>
+                  <INPUT TYPE="text" NAME="guess" placeholder="(1-100)"class="gametext2" VALUE="">
+                    <INPUT class="guessbutton" TYPE="button" VALUE="Guess" onClick='process(guessme)'>
+                    </CENTER>
+                  </TD>
+                </TR>
+              </TABLE>
+            </CENTER>
+    </FORM>
+</div>
+
+    <FORM name="live">Please enter your age:
+      <INPUT placeholder="(august 23,2002)" TYPE="text" NAME="age" class="gamebox1" VALUE="">
+        <BR><BR><BR>
+      <TABLE ALIGN="CENTER" BGCOLOR="darkblue" BORDER="4" CELLPADDING="6">
+      <INPUT class="gamebuttonstyle" TYPE="button" NAME="start" VALUE="Start Timer" ONCLICK="lifetimer(this.form)">
+
+        <INPUT class="gamebuttonstyle" TYPE="reset" NAME="resetb" VALUE="Reset Age">
+
+          <BR><BR>
+
+
+              <TR><TD class="gameboxtext">You are days old:</TD>
+
+                <TD>
+
+                  <INPUT class="gameboxtext" TYPE="text" NAME="time1" VALUE="" size=8>
+
+                  </TD>
+
+                </TR>
+
+                <TR><TD class="gameboxtext">Plus hours old:</TD>
+
+                  <TD>
+
+                    <INPUT class="gameboxtext" TYPE="text" NAME="time2" VALUE="" size=8>
+
+                    </TD>
+
+                  </TR>
+
+                  <TR><TD class="gameboxtext">Plus minutes old:</TD>
+
+                    <TD>
+                      <INPUT class="gameboxtext" TYPE="text" NAME="time3" VALUE="" size=8></TD>
+
+                    </TR>
+            </TABLE>
+</FORM>
+
+
+<br /><br /><br /><br /><br />
+
+<hr class="hr" />
+<br />
+<h class="infopage"> MORE INFORMATION PAGE </h>
+<br />
+<h class="hmoreinfo"> What it takes to be a peer listener! </h>
+
+
+<a name="becomepeer"><p class="moreinfo"> To become a peer leader you must first complete this form which will then be either passed or denied by Ms. Haberman. If passed you will have to go through a training course that will run for a couple weeks for legal reasons and to help you understand ypur role better and how to interact and react to certain situations that you might find yourself in while being a peer leader. After this mandatory training course lead by Ms. Haberman you will be labeled as an offical Peer Leader in Bard and will be assigned either an hour throughout the day or a students contact ID based off of what works best for you. </p> </a>
+
+<br />
 
 
 
-
-
+<h class="h2moreinfo"> The role of a peer listener! </h>
+<a name="infopeer"><p class="moreinfo1"> As a Peer Listener your role is to always be openminded </p> </a>
 </body>
 </html>
+
+
+
+
+
+<div class="popup" onclick="myFunction()">rmation regarding what it takes to be a peer listener!
+  <span class="popuptext" id="myPopup">As a </span>
+
+</div>
+
+<div class="popup1" onclick="myFunction1()">Click me for more information regarding the role of a peer listener!
+  <span class="popuptext1" id="myPopup1">To become .</span>
+</div>

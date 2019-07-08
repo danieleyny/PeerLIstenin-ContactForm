@@ -275,7 +275,7 @@ input
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-size: 9px;
+  font-size: 10px;
   color: #3e3c14;
   width: 300px;
   text-transform:  uppercase;
@@ -289,7 +289,7 @@ input
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-size: 9px;
+  font-size: 10px;
   color: #3e3c14;
   width: 300px;
   text-transform:  uppercase;
@@ -303,11 +303,26 @@ input
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-size: 9px;
+  font-size: 10px;
   color: #3e3c14;
   width: 300px;
   text-transform:  uppercase;
   margin-right:-40px;
+}
+.linkedtext3{
+  position: relative;
+  display: inline-block;
+  cursor: crosshair;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 11px;
+  color: #3e3c14;
+  width: 300px;
+  text-transform:  uppercase;
+  margin-right:-30px;
+  margin-top: 25px;
 }
 .hr {
   margin-top: 30px;
@@ -328,6 +343,10 @@ input
   color: #b82e0f;
 }
 .linkedtext2:hover
+{
+  color: #b82e0f;
+}
+.linkedtext3:hover
 {
   color: #b82e0f;
 }

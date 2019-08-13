@@ -70,8 +70,7 @@ input
 {
   background-color: darkblue;
   cursor: pointer;
-  color: gold;
-  font-family: cursive;
+  color: darkred;
 }
 .red
 {
@@ -434,4 +433,14 @@ input
   width: 100%;
   border-color: blue;
   border: dashed;
+}
+.maillink {
+  font-size: 12.5px;
+  font-family: georgia;
+  color: black;
+}
+.emailhover:hover {
+  color: darkred;
+  font-size: 14px;
+  font-weight: bold;
 }

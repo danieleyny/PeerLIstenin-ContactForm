@@ -1,10 +1,13 @@
 body {
-  margin: 5;
-  padding: 0;
+  margin: 8;
+  padding: 15;
   text-align: center;
   background: linear-gradient(rgba(0, 0, 50, 0.5));
   background-position: center;
   font-family: sans-serif;
+  border-left:  3px solid black;
+  border-right:  3px solid black;
+
 }
 .contact-title
 {
@@ -70,7 +73,6 @@ input
 {
   background-color: darkblue;
   cursor: pointer;
-  color: darkred;
 }
 .red
 {
@@ -91,28 +93,29 @@ input
   background: linear-gradient(125deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 .titlebox{
-  width: 160px;
-  height: 85px;
+  width: 134px;
+  height: 29px;
   background: transparent;
   border: none;
   outline: none;
   border-top: 2px solid black;
-  border-left: .5px solid black;
-  border-right: .5px solid black;
+  border-left: .8px solid black;
+  border-right: .8px solid black;
   border-bottom: 2px solid black;
   color: #FAF9A0;
-  font-size: 28px;
+  font-size: 18px;
   margin-bottom: 10px;
   transition: all 5s ease-in-out;
-  font-family: monospace;
+  font-family: 'Indie Flower', cursive;
+
 }
 .titledisc {
   background: transparent;
   border:none;
   outline: none;
-  color: darkred  ;
+  color: darkred;
   font-size: 10px;
-  margin-left:22px;
+  margin-left:5px;
   margin-top: -5px;
   font-family: monospace;
 }
@@ -437,7 +440,7 @@ input
 .maillink {
   font-size: 12.5px;
   font-family: georgia;
-  color: black;
+  color: #5e5d53;
 }
 .emailhover:hover {
   color: darkred;

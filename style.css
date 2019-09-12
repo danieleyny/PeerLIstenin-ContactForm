@@ -90,7 +90,7 @@ input
 }
 .grad1 {
   background: rgb(238,174,202);
-  background: linear-gradient(125deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  background: linear-gradient(-230deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 .titlebox{
   width: 134px;
@@ -365,6 +365,7 @@ input
   font-family:sans-serif;
   color: gold;
   margin-left: 15px;
+  cursor: default;
 }
 .gametext1 {
   font-size: 20px;
@@ -377,6 +378,7 @@ input
   margin-bottom: 15px;
   color: gold;
   border-color: gold;
+  cursor: default;
 }
 .gametext2 {
   font-family:sans-serif;
@@ -400,6 +402,7 @@ input
   margin-left: 35px;
   background-color: darkblue;
   color: gold;
+  cursor: pointer;
 }
 .guessbutton:hover {
   color: red;
@@ -422,12 +425,14 @@ input
   font-family: georgia;
   text-align: center;
   font-size: 14px;
+  cursor: default;
 }
 .gamebuttonstyle {
   border-radius: 25%;
   background-color: darkblue;
   color: gold;
   margin-left: 20px;
+  cursor: pointer;
 }
 .gamebuttonstyle:hover {
   color: red;
